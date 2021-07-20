@@ -19,8 +19,8 @@ const Card = props => {
 
     return (
         <>
-            <div className={"card rank-" + props.rank}>
-                <span className="rank">{props.rank}</span>
+            <div className={cardClasses.join(' ')}>
+                <span className="rank">{props.rank.toUpperCase()}</span>
                 <span className="suit">{symbols}</span>
             </div>
         </>
